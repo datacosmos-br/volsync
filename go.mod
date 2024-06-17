@@ -29,7 +29,7 @@ require (
 	k8s.io/klog/v2 v2.130.0
 	k8s.io/kubectl v0.28.4
 	k8s.io/utils v0.0.0-20240502163921-fe8a2dddb1d0
-	sigs.k8s.io/controller-runtime v0.15.0
+	sigs.k8s.io/controller-runtime v0.14.0
 )
 
 require (
@@ -63,7 +63,7 @@ require (
 	github.com/greatroar/blobloom v0.7.2 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/imdario/mergo v0.3.6 // indirect
+	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jackpal/gateway v1.0.15 // indirect
 	github.com/jackpal/go-nat-pmp v1.0.2 // indirect
@@ -126,7 +126,7 @@ require (
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
-	sigs.k8s.io/yaml v1.3.0 // indirect
+	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
 replace github.com/dop251/diskrsync => github.com/datacosmos-br/diskrsync v1.3.2
