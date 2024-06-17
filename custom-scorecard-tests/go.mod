@@ -1,6 +1,6 @@
 module main
 
-go 1.20
+go 1.22.4
 
 require github.com/operator-framework/api v0.20.0
 

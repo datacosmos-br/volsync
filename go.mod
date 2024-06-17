@@ -2,8 +2,6 @@ module github.com/backube/volsync
 
 go 1.22.4
 
-toolchain go1.22.4
-
 require (
 	github.com/dop251/diskrsync v1.3.0
 	github.com/dop251/spgz v1.2.1
