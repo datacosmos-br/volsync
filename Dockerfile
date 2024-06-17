@@ -1,6 +1,6 @@
 ######################################################################
 # Establish a common builder image for all golang-based images
-FROM golang:1.21 as golang-builder
+FROM golang:1.22 as golang-builder
 USER root
 WORKDIR /workspace
 # We don't vendor modules. Enforce that behavior
@@ -81,10 +81,10 @@ RUN go run build.go -no-upgrade
 # Build diskrsync binary
 FROM golang-builder AS diskrsync-builder
 
-ARG DISKRSYNC_VERSION="v1.3.0"
-ARG DISKRSYNC_GIT_HASH="507805c4378495fc2267b77f6eab3d6bb318c86c"
+ARG DISKRSYNC_VERSION="master"
+ARG DISKRSYNC_GIT_HASH="833ec71ec92d0705a4bb692663ec6fc6a824c05f"
 
-RUN git clone --depth 1 -b ${DISKRSYNC_VERSION} https://github.com/dop251/diskrsync.git
+RUN git clone --depth 1 -b ${DISKRSYNC_VERSION} https://github.com/datacosmos-br/diskrsync
 WORKDIR /workspace/diskrsync
 
 # Make sure we have the correct diskrsync release
